@@ -1,15 +1,18 @@
 group:
   - math_word_problems
-task: gsm8k_train
+task: gsm8k_le
 # dataset_path: gsm8k
 # dataset_name: main
 # fewshot_split: train
-dataset_path: danyoung/gsm8k-evo
-dataset_name: default
-fewshot_split: prompt
+dataset_path: arrow
+dataset_kwargs:
+  data_files:
+    train: /data/daniel/evomerge/evaluation/gsm8k_le/train/data-00000-of-00001.arrow
+    minibatch: /data/daniel/evomerge/evaluation/gsm8k_le/minibatch/data-00000-of-00001.arrow
 output_type: generate_until
 training_split: train
-test_split: train
+fewshot_split: train
+test_split: minibatch
 doc_to_text: "Question: {{question}}\nAnswer:"
 doc_to_target: "{{answer}}" #" {{answer.split('### ')[-1].rstrip()}}"
 metric_list:

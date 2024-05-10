@@ -2,8 +2,8 @@ task: mbpp_le
 dataset_path: arrow
 dataset_kwargs:
   data_files:
-    train: /data/daniel/evomerge/evaluation/mbpp_le/train/data-00000-of-00001.arrow
-    minibatch: /data/daniel/evomerge/evaluation/mbpp_le/minibatch/data-00000-of-00001.arrow
+    train: /data/daniel/evomerge/evaluation/datasets/mbpp_le/train/data-00000-of-00001.arrow
+    minibatch: /data/daniel/evomerge/evaluation/datasets/mbpp_le/minibatch/data-00000-of-00001.arrow
 output_type: generate_until
 fewshot_split: train
 test_split: minibatch

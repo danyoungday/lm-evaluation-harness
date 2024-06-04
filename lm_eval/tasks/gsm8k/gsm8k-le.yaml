@@ -7,8 +7,8 @@ task: gsm8k_le
 dataset_path: arrow
 dataset_kwargs:
   data_files:
-    train: /data/daniel/evomerge/evaluation/datasets/gsm8k_le/train/data-00000-of-00001.arrow
-    minibatch: /data/daniel/evomerge/evaluation/datasets/gsm8k_le/minibatch/data-00000-of-00001.arrow
+    train: /data/daniel/evomerge/data/datasets/gsm8k_le/train/data-00000-of-00001.arrow
+    minibatch: /data/daniel/evomerge/data/datasets/gsm8k_le/minibatch/data-00000-of-00001.arrow
 output_type: generate_until
 training_split: train
 fewshot_split: train
